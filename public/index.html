@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-3">
+        <div class="">
+            <nav class="text-right mt-5">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase text-xl border-gray-200 border-b">
+                        <a href="/" class="text-green-500">Food Ninja</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="menubutton">
+                        <img src="./img/menu.png" alt="">
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li>
+                        <a href="/" class="flex justify-between w-20 pr-1 border-red-400 border-r-2 ">
+                            <span>Home</span>
+                            <img src="./img/home.png" alt="home" class="w-4 h-4 mt-1"> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="flex justify-between w-20 pr-1 border-r-2 border-white ">
+                            <span>About</span>
+                            <img src="./img/information.png" alt="about" class="w-4 h-4 mt-1 "> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="flex justify-between w-20 pr-1 border-r-2 border-white">
+                            <span>Contact</span>
+                            <img src="./img/phone.png" alt="contact" class="w-4 h-4 mt-1">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="bg-slate-100 h-92 w-4/5 mx-9 mt-12 p-6">
+                <div>
+                    <h1 class="text-2xl font-bold border-b border-gray-300">
+                        Blog
+                    </h1>
+                    <p class="mt-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis dolorem fugiat culpa voluptates qui obcaecati corrupti ducimus adipisci iure consectetur ullam eligendi quia repellat velit sed explicabo, quasi quas, beatae reiciendis, soluta odio placeat. Excepturi dolores dolor harum labore perspiciatis? Aspernatur sequi, hic odit velit, cum porro dignissimos error consequatur et nisi atque possimus. Tenetur enim rerum ipsam natus, laboriosam modi illum. Autem aspernatur quasi sed asperiores quia commodi voluptatem ipsa quis reiciendis enim voluptate, quaerat nihil illum error. Quis possimus beatae debitis exercitationem quia ipsam minima, sit maiores, molestias illo dolore quas. Est tempore optio iste libero magni.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <main class="px-16 py-6 md:col-span-2">
+            <div class="flex justify-center md:justify-center lg:justify-end space-x-3">
+                <a href="#" class="btn bg-white text-red-400 border-red-400 border-2 hover:bg-red-400 hover:text-white">Log in</a> 
+                <a href="#" class="btn bg-white text-red-400 border-red-400 border-2 hover:bg-red-400 hover:text-white">Sign up</a>
+            </div>
+
+            <header class="py-3">
+                <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+                <h3 class="text-2xl font-semibold">For Ninjas</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+                <div class="mt-8 grid space-x-5 md:grid-cols-3 lg:grid-cols-3">
+                    <!--Cards-->
+                    <div class="card hover:shadow-lg hover:shadow-gray-400">
+                        <img src="./img/ramen.jpg" alt="ramen" class="h-52 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">
+                                Healthy Ramen bowl
+                            </span>
+                            <span class="block text-sm text-500">
+                                Recipes by Maria
+                            </span>
+                        </div>
+                        <div class="badge flex ">
+                            <img src="./img/clock.png" alt="time">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg hover:shadow-gray-400" >
+                        <img src="./img/pizza.jpg" alt="ramen" class="h-52 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">
+                                Cheesy Margarita Pizza
+                            </span>
+                            <span class="block text-sm text-500">
+                                Recipes by Maria
+                            </span>
+                        </div>
+                        <div class="badge flex">
+                            <img src="./img/clock.png" alt="time">
+                            <span>30 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg hover:shadow-gray-400">
+                        <img src="./img/sandwich.jpg" alt="ramen" class="h-52 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">
+                                Tuna Sandwich
+                            </span>
+                            <span class="block text-sm text-500">
+                                Recipes by Maria
+                            </span>
+                        </div>
+                        <div class="badge flex">
+                            <img src="./img/clock.png" alt="time">
+                            <span>15 mins</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <h4 class="font-bold mt-3 border-gray-200 border-b">Most Popular</h4>
+                <div>
+                <!--Cards-->
+                </div>
+                
+                <div class="flex justify-center">
+                    <div class="btn mt-2 bg-white border-2 border-gray-300 hover:border-gray-400 hover:bg-slate-200 hover:shadow-inner">Load more..</div>
+                </div>
+                
+            </div>
+
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
